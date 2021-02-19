@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+*{
+    font-family: 'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    position: relative;
+    background-color: black;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+}
+
+.slogan{
+    display: flex;
+    margin: auto;
+}
+
+.slogan h1{
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 400;
+    font-size: 50px;
+    text-shadow: 4px 4px #951555;
+    color: white;
+    position: absolute;
+}
+
+.slogan_container{
+    font-size: 25px;
+    color: beige;
+    position: absolute;
+    padding-left: 10%;
+    padding-bottom: 8%;
+    max-width: 70%;
+    margin-bottom: -1%;
+    top: 45%;
+}
+
+.content{
+    text-shadow: 1px 2px #951555 ;
+    padding: 8% 0px;
+}
+
+.booking_btn_container{
+    align-items: center;
+}
+
+.booking_btn {
+    font-family: 'raleway', sans-serif !important;
+    position: absolute;
+    border: 3px solid #fff;
+    border-color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 1px rgb(114, 114, 114);
+    font-size: 2vw;
+    padding: 10px 25px;
+    background-color: #951555;
+    color: white;
+    border-radius: 50px;
+    bottom: 20px;
+    
+}
+
+.about {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.about h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 400;
+    font-size: 50px;
+    text-shadow: 4px 4px #951555;
+    color: white;
+    position: absolute;
+    margin: 2%;
+
+}
+
+.card {
+    align-items: inline-block;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    margin: 10% 0;
+}
+
+.card p {
+    width: 70%;
+}
+
+.card h3 {
+    padding: 20px;
+    text-transform: capitalize;
+    text-shadow: 2px 2px #951555;
+}
+
+
+@media   (max-width: 600px) {
+    .banner img{
+        display: none;
+    }
+
+    .slogan_container {
+        position: relative;
+        font-size: 25px;
+        color: beige;
+        padding-left: 10%;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        max-width: 70%;
+        margin-bottom: -1%;
+        top: 16%;
+    }
+
+    .booking_btn_container{
+        margin-top: 10%;
+    }
+
+    .booking_btn_container button{
+        font-size: 3vw;
+
+    }
+
+    .slogan h1{
+        position: absolute;
+        top: 10%;
+        font-size: 20px;
+        padding-bottom: 10%;
+    }
+
+    .content{
+        font-size: 14px;
+        margin-top: 20%;
+    }
+
+    .about {
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .about h2 {
+        position: relative;
+        text-align: left;
+        text-transform: capitalize;
+        font-family: 'Raleway', sans-serif !important;
+        font-weight: 400;
+        font-size: 33px;
+        text-shadow: 4px 4px #951555;
+        color: white;
+        margin: 13% 10px;
+    }
+
+    .card img {
+        display: none;
+    }
+    
+
+
+}
+
+
