@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap'); 
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #951555;
+    color: white;
+    padding: 15px 38px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5% 0;
+}
+
+input[type=submit]:hover {
+  background-color: #fff;
+  color: #951555;
+}
+
+.contact_area {
+    font-family: -apple-system, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    border-radius: 5px;
+    padding: 20px 10%;
+    align-items: center;
+    margin: -2px;
+    o: ;
+    color: #fff;
+}
+
+textarea {
+    resize: none ;
+}
+
+.contact_area h1 {
+    text-shadow: 4px 4px #951555;
+    padding: 5% 0;
+}
+
+.contact_area button {
+    padding: 15% 0;
+}
+
