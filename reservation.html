@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doge Rentals</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <meta name="description" content="rent car website" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="reservation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title></title>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        class="logo"
+        src="Doge Rentals-logos_white1.png"
+        alt="a very nice yellow doge"
+      />
+      <nav>
+        <ul class="nav_links">
+          <li><a href="home page.html">Home</a></li>
+          <li><a href="gallery.html">Catalog</a></li>
+          <li><a href="reservation.html">Reservations</a></li>
+        </ul>
+      </nav>
+      <a class="contact" href="contact.html"><button>Contact Us</button></a>
+    </div>
+
+    <div id="form">
+      <select id="vehicles" onchange="calculate_price()" required>
+        <option value="null">--- select ---</option>
+        <option value="motorcycle">motorcycle</option>
+        <option value="city">city</option>
+        <option value="compact">compact</option>
+        <option value="sedan">sedan</option>
+        <option value="van">van</option>
+        <option value="heavy">heavy</option>
+        <option value="truck">truck</option>
+        <option value="bicycle">bicycle</option>
+      </select>
+
+      <h4 id="transmission">Transmission mode</h4>
+
+      <select id="engines" onchange="calculate_price()" required>
+        <option value="null">--- select ---</option>
+        <option value="electric">electric</option>
+        <option value="hybrid">hybrid</option>
+        <option value="essence">essence</option>
+        <option value="diesel">diesel</option>
+        <option value="human">human</option>
+      </select>
+      <label for="calcule">Enter your days :</label>
+
+      <input type="number" id="duration" min="1" max="100" value="1" required>
+      <input
+        type="button"
+        value="Calculate"
+        id="calculate"
+      />
+
+      <p id="price"></p>
+    </div>
+    <div class="footer">
+      <div class="footer_container">
+        <div class="row">
+          <div class="footer_column">
+            <h4>About</h4>
+            <ul>
+              <li><a href="#">who are we?</a></li>
+              <li><a href="#">our other services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">how we give back</a></li>
+            </ul>
+          </div>
+          <div class="footer_column">
+            <h4>Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">safety</a></li>
+              <li><a href="#">refunds</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer_column">
+            <h4>Our Branches</h4>
+            <ul>
+              <li><a href="#">U.S</a></li>
+              <li><a href="#">Europe</a></li>
+              <li><a href="#">Middle East</a></li>
+              <li><a href="#">North Africa</a></li>
+            </ul>
+          </div>
+          <div class="footer_column">
+            <h4>Follow Us</h4>
+            <div class="social_media">
+              <a href="#"
+                ><i class="fa fa-facebook-f" style="font-size: 25px"></i
+              ></a>
+              <a href="#"
+                ><i class="fa fa-twitter" style="font-size: 25px"></i
+              ></a>
+              <a href="#"
+                ><i class="fa fa-instagram" style="font-size: 25px"></i
+              ></a>
+              <a href="#"
+                ><i class="fa fa-telegram" style="font-size: 25px"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" value="calculate" src="reservation.js"></script>
+</html>
